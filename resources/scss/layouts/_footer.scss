@@ -1,0 +1,110 @@
+.footer {
+  background-color: $color7;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: customClamp(50, 20);
+  padding-bottom: customClamp(60, 20);
+  @include breakpoint(smxs){
+    flex-direction: column;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  font-weight: 500;
+
+  li {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.footer-contact {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    &_alt {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color2;
+    fill: transparent;
+    stroke: $text-color-alt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+
+.footer-bottom {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: customClamp(20, 10);
+  padding-bottom: customClamp(20, 10);
+  @include breakpoint(xs){
+    flex-direction: column;
+  }
+
+  .webdev {
+    span {
+      font-weight: 600;
+      color: $color2;
+    }
+
+    b {
+      color: red;
+    }
+  }
+}
+
+.footer-phones{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-phone{
+  font-weight: 500;
+}
+
+.footer-email{
+  font-weight: 500;
+}
+
+.footer-social{
+  margin-top: 10px;
+}
+
+.footer-work{
+  line-height: 1.5;
+  b{
+    font-weight: 500;
+  }
+}

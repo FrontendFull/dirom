@@ -1,0 +1,83 @@
+.form:not(.search) {
+  background-image: url("/images/bg-form.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  color: $text-color-alt;
+
+  .form-title {
+    font-size: customClamp(56, 28);
+    margin-bottom: customClamp(20, 10);
+    color: $text-color-alt;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .input-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: customClamp(20, 10);
+
+    & > .validation-field {
+      flex: 1 1 100%;
+    }
+
+    & > .cell-2 {
+      flex: 1 1 calc(100% / 2 - 20px);
+    }
+
+    & > .cell-3 {
+      flex: 1 1 calc(100% / 3 - 20px);
+    }
+
+    & > * {
+      min-width: 200px;
+    }
+  }
+
+  .input-checkbox{
+    margin-top: 15px;
+  }
+
+  .agree{
+    a{
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  .button {
+    margin-top: customClamp(20, 10);
+    min-width: 180px;
+    @include breakpoint(sxs){
+      width: 100%;
+    }
+  }
+
+  &:not(:has(.agree input[type='checkbox']:checked)){
+    .button{
+      background-color: gray;
+      border-color: grey;
+      pointer-events: none;
+    }
+  }
+}
+
+.static-form{
+  padding: customClamp(80,30);
+  position: relative;
+  z-index: 3;
+}
+
+.modal-form {
+  width: 95%;
+  max-width: 980px;
+
+  .fancybox-button {
+    color: $text-color-alt;
+    padding: 5px;
+    @include hover{
+      color: $color1;
+    }
+  }
+}

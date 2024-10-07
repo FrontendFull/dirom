@@ -1,0 +1,10 @@
+.RatingStar {
+  width: 16px;
+  height: 16px;
+  stroke: #FDD700;
+  stroke-width: 0;
+  .LR {
+    --color-star-full: #FDD700;
+    --color-star: #E6E6E6 ;
+  }
+}
