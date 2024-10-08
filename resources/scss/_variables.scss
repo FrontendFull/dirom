@@ -1,17 +1,17 @@
-$font-family: 'Gilroy', sans-serif;
+$font-family: 'Oswald', sans-serif;
 $font-family-alt: $font-family;
 $font-family-validation: $font-family;
 $font-family-headings: $font-family-alt;
 
-$container: 1390;
-$maxScreen: 1450;
+$container: 1420;
+$maxScreen: 1500;
 $minScreen: 500;
 
-$text-color: #24242E;
+$text-color: #FFFFFF;
 $text-color-alt: #FFFFFF;
 $heading-color: $text-color;
-$background-color: #FFFFFF;
-$color1: #AB1113;
+$background-color: #171616;
+$color1: #F47A00;
 $color2: #02084C;
 $color3: #031372;
 $color4: #5891E5;
@@ -24,17 +24,15 @@ $link-hover-color: $color1;
 
 
 $font-size: customClamp(16, 14);
-$font-size-paragraph: 16px;
-$paragraph-margin: 24px; //margin-bottom
-$paragraph-height: 1.5; //line-height
-$paragraph-color: $text-color;
+$paragraph-margin: 1em; //margin-bottom
+$paragraph-height: 1.4; //line-height
 $list-image: false; //list.png
 
-$heading-size-max: 56, 32, 28, 20, 18, 16;
+$heading-size-max: 72, 56, 32, 28, 24, 20;
 $heading-size-min: 28, 26, 24, 20, 18, 16;
-$heading-margin-max: 30, 20, 20, 20, 20, 20;
-$heading-margin-min: 20, 15, 15, 15, 15, 15;
-$heading-font-weight: 800, 600, 600, 600, 600, 600; // 1 = "normal"(400)
+$heading-margin-max: 36, 30, 25, 20, 20, 20;
+$heading-margin-min: 16, 15, 15, 15, 15, 15;
+$heading-font-weight: 500, 500, 500, 500, 500, 500; // 1 = "normal"(400)
 $heading-uppercase: 1, 1, 1, 0, 0, 0; // 0 = "none", 1 = "uppercase"
 $heading-text-align: l, l, l, l, l, l; // c = "center", l = "left", r = "right"
 

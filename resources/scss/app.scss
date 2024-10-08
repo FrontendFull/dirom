@@ -26,9 +26,8 @@
 @import "mixins/image";
 @import "mixins/line_clamp";
 @import "mixins/device";
-@import "mixins/fontface";
 
-@import "fonts";
+//@import "fonts";
 
 body{padding: 0;}
 
@@ -54,6 +53,8 @@ body{padding: 0;}
 
 //layouts
 @import "layouts/header";
+@import "layouts/catalog";
+@import "layouts/seo-text";
 @import "layouts/footer";
 @import "layouts/error";
 

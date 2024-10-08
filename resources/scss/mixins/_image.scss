@@ -1,4 +1,4 @@
-@mixin imageSize($width: 1,$height: 1,$hover:0,$object-fit: 'cover') {
+@mixin  imageSize($width: 1,$height: 1,$hover:0,$object-fit: 'cover') {
   position: relative;
   overflow: hidden;
   display: block;
@@ -13,6 +13,7 @@
     }
   }
   &:after {
+    pointer-events: none;
     content: '';
     display: block;
     padding-top: calc(#{$height} / #{$width} * 100%);

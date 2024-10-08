@@ -34,18 +34,18 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
+    width: .4em;
+    height: .2em;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $color1;
+    background: rgba($text-color, .05);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $color2;
+    background: $color1;
 }
 
 /* Handle on hover */
@@ -59,7 +59,7 @@ ul, ol {
 
     li {
         margin-bottom: 10px;
-        margin-left: 15px;
+        margin-left: 20px;
         font-size: inherit;
         color: inherit;
     }
@@ -103,7 +103,7 @@ table {
     th, td {
         padding: 15px 10px;
         border: 1px solid $table-border-color;
-        font-size: $font-size-paragraph;
+        font-size: inherit;
         color: $table-color;
         @include breakpoint(sxs) {
             padding: 5px;
@@ -160,7 +160,7 @@ button {
             position: relative;
             left: 15px;
             padding-right: 15px;
-            font-size: $font-size-paragraph;
+            font-size: inherit;
         }
     }
 
@@ -228,11 +228,11 @@ html[data-useragent*='MSIE 10.0'] {
 }
 
 .pt-content {
-    padding-top: customClamp(130, 60);
+    padding-top: customClamp(120, 40);
 }
 
 .pb-content {
-    padding-bottom: customClamp(130, 60);
+    padding-bottom: customClamp(120, 40);
 }
 
 .py-content {
@@ -256,4 +256,18 @@ html[data-useragent*='MSIE 10.0'] {
         display: none !important;
     }
 }
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: customClamp(36, 16);
+
+    .title-section, .title-page {
+        margin: 0;
+    }
+}
+
 
