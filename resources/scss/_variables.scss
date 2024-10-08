@@ -8,7 +8,7 @@ $maxScreen: 1500;
 $minScreen: 500;
 
 $text-color: #FFFFFF;
-$text-color-alt: #FFFFFF;
+$text-color-alt: rgba($text-color, .5);
 $heading-color: $text-color;
 $background-color: #171616;
 $color1: #F47A00;
