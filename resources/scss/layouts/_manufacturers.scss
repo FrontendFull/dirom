@@ -1,0 +1,43 @@
+.manufacturers-division{
+    position: relative;
+    z-index: 0;
+}
+
+.manufacturers-slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.manufacturers-slider.slick-slider{
+    .slick-track{
+        display: flex;
+    }
+    margin: 0 -2px;
+    .slick-slide{
+        margin: 0 2px;
+        height: auto;
+        &>div{
+            height: 100%;
+        }
+    }
+}
+
+.manufacturer-card {
+    display: flex!important;
+    flex-direction: column;
+    height: 100%;
+    background-color: $background-color;
+    &__image {
+        background-color: rgba($text-color, .05);
+        @include imageSize(353,190, 0, contain);
+        border-radius: 10px;
+        img{
+            width: 85%;
+            height: 85%;
+            max-width: 180px;
+            max-height: 110px;
+        }
+    }
+
+}

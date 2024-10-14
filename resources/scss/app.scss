@@ -36,7 +36,8 @@ body{padding: 0;}
 @import "grid";
 @import "libs/aos";
 @import "libs/fancybox3";
-@import "libs/slick-theme";
+@import "slick-slider/slick/slick";
+@import "slick-slider/slick/slick-theme";
 @import "libs/select2";
 @import "libs/popup-slide";
 @import "libs/review";
@@ -55,6 +56,8 @@ body{padding: 0;}
 @import "layouts/header";
 @import "layouts/catalog";
 @import "layouts/benefits";
+@import "layouts/manufacturers";
+@import "layouts/contacts";
 @import "layouts/seo-text";
 @import "layouts/footer";
 @import "layouts/error";

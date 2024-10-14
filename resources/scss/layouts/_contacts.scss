@@ -1,0 +1,110 @@
+.contacts-division {
+}
+
+.container {
+}
+
+.my-content {
+}
+
+.contacts-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contacts-info {
+    max-width: 440px;
+
+    &__title {
+        margin-bottom: customClamp(26,16);
+    }
+
+    &__text {
+        font-size: customClamp(18,16);
+        margin-bottom: customClamp(26,16);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: customClamp(30, 5);
+        flex-wrap: wrap;
+        margin-bottom: customClamp(26,16);
+    }
+
+    &__alt-title {
+        font-size: customClamp(24,18);
+        font-weight: 500;
+        margin-bottom: customClamp(10,2);
+    }
+
+    &__alt-text {
+        margin-bottom: customClamp(10,2);
+        color: $text-color-alt;
+    }
+
+    &__alt-phone {
+        margin-bottom: customClamp(10,2);
+        font-size: customClamp(24,18);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon{
+            width: 1.1em;
+            height: 1.1em;
+            fill: $color1;
+        }
+    }
+
+    &__button {
+        margin-top: customClamp(26,16);
+    }
+}
+
+.contacts-mesh {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contacts-card {
+    max-width: 450px;
+    flex: 1 1 450px;
+
+    &__map {
+        @include imageSize(450,300)
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__line {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        line-height: 1;
+
+        .icon{
+            fill: rgba($text-color, .25);
+            width: 20px;
+            height: 20px;
+            align-self: flex-start;
+        }
+    }
+}
+
+.icon {
+}

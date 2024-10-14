@@ -28,26 +28,207 @@
             @endfor
         </div>
     </div>
+
     <div class="benefits-division container my-content">
-        <div class="h1 title-section">Працювати з <span>Dirom</span> <div class="label">– це отримувати чесний та відповідальний сервіс</div></div>
+        <div class="h1 title-section">Працювати з <span>Dirom</span>
+            <div class="label">– це отримувати чесний та відповідальний сервіс</div>
+        </div>
         <div class="benefits-mesh">
             @for ($i = 1; $i <= 4; $i++)
-            <div class="benefit-card">
-                <div class="benefit-card__image">
-                    <img src="https://picsum.photos/355/450" alt="#">
-                </div>
-                <div class="benefit-card__info">
-                    <div class="benefit-card__title">
-                        {{ fake()->sentence(5) }}
+                <div class="benefit-card">
+                    <div class="benefit-card__image">
+                        <img src="https://picsum.photos/355/450" alt="#">
                     </div>
-                    <div class="benefit-card__text">
-                        {{ fake()->sentence(10) }}
+                    <div class="benefit-card__info">
+                        <div class="benefit-card__title">
+                            {{ fake()->sentence(5) }}
+                        </div>
+                        <div class="benefit-card__text">
+                            {{ fake()->sentence(10) }}
+                        </div>
                     </div>
                 </div>
-            </div>
             @endfor
         </div>
     </div>
+
+    <div class="manufacturers-division container my-content">
+        <div class="title-wrap">
+            <div class="h1 title-division">Виробники</div>
+            <div class="manufacturers-slider-nav">
+            </div>
+        </div>
+        <div class="manufacturers-slider manufacturers-mesh">
+            @for ($i = 1; $i <= 3; $i++)
+                <div class="manufacturer-card">
+                    <div class="manufacturer-card__image">
+                        <img src="https://picsum.photos/200/55" alt="#">
+                    </div>
+                </div>
+                {{--  другой формат можна удалить --}}
+                <div class="manufacturer-card">
+                    <div class="manufacturer-card__image">
+                        <img src="https://picsum.photos/106/106" alt="#">
+                    </div>
+                </div>
+            @endfor
+        </div>
+    </div>
+
+    <div class="contacts-division container my-content">
+        <div class="contacts-inner">
+            <div class="contacts-info">
+                <h1 class="contacts-info__title title-section">Контакти</h1>
+                <div class="contacts-info__text">Залишились питання? Залиште заявку на сайті або у соцмережах і наш
+                    менеджер
+                    передзвонить вам.
+                </div>
+                <div class="contacts-info__row">
+                    <div class="contacts-info__cell">
+                        <div class="contacts-info__social-label social-label">Соціальні мережі:</div>
+                        <div class="contacts-info__social-list social-list">
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-info__cell">
+                        <div class="contacts-info__social-label social-label">Месенджери:</div>
+                        <div class="contacts-info__social-list social-list">
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-info__alt-title">Оптовим постачальникам</div>
+                <div class="contacts-info__alt-text">Для комерційної співпраці зателефонуйте за номером нижче</div>
+                <a class="contacts-info__alt-phone" href="tel:(093) 223 27 66">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#phone"></use>
+                    </svg>
+                    <span>(093) 223 27 66</span>
+                </a>
+                <div class="contacts-info__button button">Зворотній зв’язок</div>
+            </div>
+            <div class="contacts-mesh">
+                <div class="contacts-card">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
+                    </div>
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-card">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
+                    </div>
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="seo-division container my-content">
         <div class="seo-text ckeditor">
             <h1>Більше про <span>компанію</span></h1>
