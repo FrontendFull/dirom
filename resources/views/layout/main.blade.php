@@ -29,6 +29,22 @@
         </div>
     </div>
 
+    <div class="target-division my-content">
+        <div class="target-image">
+            <img src="https://picsum.photos/800/515" alt="#">
+        </div>
+        <div class="container">
+            <div class="h1 title-section">цільове <span>спрямування</span></div>
+            <div class="target-mesh">
+                @for ($i = 1; $i <= 12; $i++)
+                    <a href="#" class="target-card">
+                        {{ fake()->sentence(2) }}
+                    </a>
+                @endfor
+            </div>
+        </div>
+    </div>
+
     <div class="benefits-division container my-content">
         <div class="h1 title-section">Працювати з <span>Dirom</span>
             <div class="label">– це отримувати чесний та відповідальний сервіс</div>
