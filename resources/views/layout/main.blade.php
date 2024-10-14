@@ -17,7 +17,7 @@
                 <div class="catalog-section-card">
                     <a class="catalog-section-card__link" href="#"></a>
                     <div class="catalog-section-card__image">
-                        <img src="https://picsum.photos/400/400" alt="#">
+                        <img src="https://picsum.photos/400/400" alt="#">"
                     </div>
                     <div class="catalog-section-card__info">
                         <div class="catalog-section-card__title">
@@ -71,7 +71,7 @@
     <div class="manufacturers-division container my-content">
         <div class="title-wrap">
             <div class="h1 title-division">Виробники</div>
-            <div class="manufacturers-slider-nav">
+            <div class="manufacturers-slider-nav nav-slider">
             </div>
         </div>
         <div class="manufacturers-slider manufacturers-mesh">
@@ -242,6 +242,185 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="news-division container my-content">
+        <div class="title-wrap">
+            <div class="h1 title-division">Виробники</div>
+            <div class="tabs-navigation">
+                <span data-category="all" class="tabs-item active">Всі</span>
+                <span data-category="category_1" class="tabs-item">Категорія 1</span>
+                <span data-category="category_2" class="tabs-item">Категорія 2</span>
+                <span data-category="category_3" class="tabs-item">Категорія 3</span>
+            </div>
+            <div class="news-slider-nav nav-slider">
+            </div>
+        </div>
+        <div class="news-slider news-mesh">
+            <div class="new-card" data-category="category_1">
+                <a href="#" class="new-card__link"></a>
+                <div class="new-card__image">
+                    <img src="https://picsum.photos/353/300" alt="#">
+                    <div class="new-card__labels">
+                        <div class="new-card__label">Категорія 1</div>
+                    </div>
+                </div>
+                <div class="new-card__info">
+                    <div class="new-card__date">
+                        <svg class="icon">
+                            <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                        </svg>
+                        <span>18.05.2010</span>
+                    </div>
+                    <div class="new-card__title">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                    <div class="new-card__text">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                </div>
+            </div>
+            <div class="new-card" data-category="category_2">
+                <a href="#" class="new-card__link"></a>
+                <div class="new-card__image">
+                    <img src="https://picsum.photos/353/300" alt="#">
+                    <div class="new-card__labels">
+                        <div class="new-card__label">Категорія 2</div>
+                    </div>
+                </div>
+                <div class="new-card__info">
+                    <div class="new-card__date">
+                        <svg class="icon">
+                            <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                        </svg>
+                        <span>18.05.2010</span>
+                    </div>
+                    <div class="new-card__title">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                    <div class="new-card__text">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                </div>
+            </div>
+            <div class="new-card" data-category="category_3">
+                <a href="#" class="new-card__link"></a>
+                <div class="new-card__image">
+                    <img src="https://picsum.photos/353/300" alt="#">
+                    <div class="new-card__labels">
+                        <div class="new-card__label">Категорія 3</div>
+                    </div>
+                </div>
+                <div class="new-card__info">
+                    <div class="new-card__date">
+                        <svg class="icon">
+                            <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                        </svg>
+                        <span>18.05.2010</span>
+                    </div>
+                    <div class="new-card__title">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                    <div class="new-card__text">
+                        {{ fake()->sentence(20) }}
+                    </div>
+                </div>
+            </div>
+            @for ($i = 1; $i <= 10; $i++)
+                <div class="new-card" data-category="category_1">
+                    <a href="#" class="new-card__link"></a>
+                    <div class="new-card__image">
+                        <img src="https://picsum.photos/353/300" alt="#">
+                        <div class="new-card__labels">
+                            <div class="new-card__label">Категорія 1</div>
+                        </div>
+                    </div>
+                    <div class="new-card__info">
+                        <div class="new-card__date">
+                            <svg class="icon">
+                                <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                            </svg>
+                            <span>18.05.2010</span>
+                        </div>
+                        <div class="new-card__title">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                        <div class="new-card__text">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="new-card" data-category="category_2">
+                    <a href="#" class="new-card__link"></a>
+                    <div class="new-card__image">
+                        <img src="https://picsum.photos/353/300" alt="#">
+                        <div class="new-card__labels">
+                            <div class="new-card__label">Категорія 2</div>
+                        </div>
+                    </div>
+                    <div class="new-card__info">
+                        <div class="new-card__date">
+                            <svg class="icon">
+                                <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                            </svg>
+                            <span>18.05.2010</span>
+                        </div>
+                        <div class="new-card__title">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                        <div class="new-card__text">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="new-card">
+                    <a href="#" class="new-card__link"></a>
+                    <div class="new-card__image">
+                        <img src="https://picsum.photos/353/300" alt="#">
+                        <div class="new-card__labels">
+                            <div class="new-card__label">Категорія</div>
+                        </div>
+                    </div>
+                    <div class="new-card__info">
+                        <div class="new-card__date">
+                            <svg class="icon">
+                                <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                            </svg>
+                            <span>18.05.2010</span>
+                        </div>
+                        <div class="new-card__title">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                        <div class="new-card__text">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="new-card" data-category="category_3">
+                    <a href="#" class="new-card__link"></a>
+                    <div class="new-card__image">
+                        <img src="https://picsum.photos/353/300" alt="#">
+                        <div class="new-card__labels">
+                            <div class="new-card__label">Категорія 3</div>
+                        </div>
+                    </div>
+                    <div class="new-card__info">
+                        <div class="new-card__date">
+                            <svg class="icon">
+                                <use xlink:href="/images/sprites/sprite.svg#date"></use>
+                            </svg>
+                            <span>18.05.2010</span>
+                        </div>
+                        <div class="new-card__title">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                        <div class="new-card__text">
+                            {{ fake()->sentence(20) }}
+                        </div>
+                    </div>
+                </div>
+            @endfor
         </div>
     </div>
 

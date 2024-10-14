@@ -48,8 +48,9 @@
 .nav-slider {
     display: flex;
     align-items: center;
-    gap: customClamp(10, 5);
+    gap: 2px;
 }
+
 
 .slick-arrow {
     @extend %buttons;

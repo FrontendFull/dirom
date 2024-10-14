@@ -1,0 +1,122 @@
+.news-division{
+    .tabs-navigation{
+        margin-left: auto;
+    }
+}
+
+.news-slider {
+}
+
+.news-mesh {
+    &:not(.slick-initialized) {
+        @include flex-mesh(2, 2, (default: 4, md-down: 3, xs: 2, ultra-sxs: 1));
+    }
+
+    &.slick-slider {
+        @include breakpoint(md-up) {
+            & > *:nth-child(n + 5) {
+                display: none;
+            }
+        }
+        @include breakpoint(md-down) {
+            & > *:nth-child(n + 4) {
+                display: none;
+            }
+        }
+        @include breakpoint(xs) {
+            & > *:nth-child(n + 3) {
+                display: none;
+            }
+        }
+        @include breakpoint(ultra-sxs) {
+            & > *:nth-child(n + 2) {
+                display: none;
+            }
+        }
+    }
+}
+
+.news-slider{
+    &.slick-initialized{
+        margin: 0 -1px;
+        .slick-slide{
+            margin: 0 1px;
+        }
+    }
+}
+
+.new-card {
+    border-bottom: 2px solid rgba($text-color, .15);
+
+    &__link {
+    }
+
+    &__labels{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: customClamp(20,10) customClamp(20,10);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    &__label{
+        background-color: $color1;
+        padding: customClamp(5,2) customClamp(10,5);
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &__image {
+        @include imageSize(353, 300);
+        img{
+            transition: .4s;
+        }
+    }
+
+    &__info {
+        padding: customClamp(20, 10);
+        background-color: rgba($background-color, .25);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transition: .4s;
+    }
+
+    &__date {
+        font-size: 12px;
+        color: $text-color-alt;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .icon {
+            width: 1.4em;
+            height: 1.4em;
+            fill: transparent;
+            stroke: currentColor;
+        }
+    }
+
+    &__title {
+        @include line-clamp(customClamp(18, 16), 2, 1.5);
+    }
+
+    &__text {
+        @include line-clamp(customClamp(16, 14), 3, 1.5);
+        color: $text-color-alt;
+    }
+
+    @include hover{
+        border-bottom: 2px solid $color1;
+
+        .new-card__info{
+            background-color: $background-color;
+        }
+    }
+}
+
+.icon {
+}

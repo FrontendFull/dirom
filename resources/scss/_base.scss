@@ -271,4 +271,29 @@ html[data-useragent*='MSIE 10.0'] {
     }
 }
 
+.tabs-navigation{
+    display: flex;
+    align-items: center;
+}
+.tabs-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-height: customClamp(60, 45, 1800, 1200);
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: $background-color;
+    padding: 5px customClamp(20,10);
+
+    @include hover{
+        color: $color1;
+    }
+
+    &.active{
+        pointer-events: none;
+        color: $text-color;
+        background-color: $color1;
+    }
+}
 
