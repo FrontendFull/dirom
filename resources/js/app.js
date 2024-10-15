@@ -128,16 +128,31 @@ $(document).ready(function () {
     //     $('.news-slider').slick('setPosition');
     // });
 
-    $(function () {
-        var tabContainers = $('.tabs > div');
+    $('.tabs').each(function() {
+        var $this = $(this);
+        var tabContainers = $this.find('> div');  // Отримуємо тільки прямі div елементи всередині конкретної tabs групи
+        var tabListItems = $this.find('.tab-list li');
+
+        // Ховаємо всі таби та показуємо перший
         tabContainers.hide().filter(':first').show();
-        $('.tabs .tab-list a').click(function () {
+        tabListItems.filter(':first').addClass('active');
+
+        // Обробка кліку на таб
+        $this.find('.tab-list a').click(function (e) {
+            e.preventDefault();
+
+            var targetTab = $(this).attr('href');
+
+            // Ховаємо всі контейнери та показуємо вибраний
             tabContainers.hide();
-            tabContainers.filter(this.hash).show();
-            $('.catalog-slider').slick('setPosition');  //если в Табе используется слайдер
-            $('.tabs .tab-list>li').removeClass('active');
+            $this.find(targetTab).show();
+
+            // Оновлюємо активний таб
+            tabListItems.removeClass('active');
             $(this).parent('li').addClass('active');
-            return false;
+
+            // Оновлюємо позицію слайдера, якщо використовується
+            $this.find('.catalog-slider').slick('setPosition');
         }).filter(':first').click();
     });
 });

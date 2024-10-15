@@ -557,7 +557,7 @@
                         <img src="https://picsum.photos/450/300" alt="#">
                     </div>
                     <div class="contacts-card__info">
-                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__title">київський офіс</div>
                         <div class="contacts-card__line">
                             <a class="contacts-card__item"
                                href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
@@ -570,29 +570,58 @@
                         </div>
                         <div class="contacts-card__line">
                             <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               href="tel:099 947 5645"
                                target="_blank">
                                 <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                    <use xlink:href="/images/sprites/sprite.svg#vodafone"></use>
                                 </svg>
                                 <span>099 947 5645</span>
                             </a>
                             <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               href="tel:099 947 5645"
                                target="_blank">
                                 <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                    <use xlink:href="/images/sprites/sprite.svg#kyivstar"></use>
                                 </svg>
                                 <span>099 947 5645</span>
                             </a>
                             <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               href="tel:099 947 5645"
                                target="_blank">
                                 <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                    <use xlink:href="/images/sprites/sprite.svg#lifecell"></use>
                                 </svg>
                                 <span>099 947 5645</span>
                             </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="mailto:lorem@gmail.com"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#email"></use>
+                                </svg>
+                                <span>lorem@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <div class="contacts-card__item">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#clock"></use>
+                                </svg>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Понеділок - Четверг:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">П'ятниця:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Субота /Неділя:</div>
+                                    вихідні
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -601,7 +630,7 @@
                         <img src="https://picsum.photos/450/300" alt="#">
                     </div>
                     <div class="contacts-card__info">
-                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__title">харківський офіс</div>
                         <div class="contacts-card__line">
                             <a class="contacts-card__item"
                                href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
@@ -614,29 +643,210 @@
                         </div>
                         <div class="contacts-card__line">
                             <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               href="tel:099 947 5645"
                                target="_blank">
                                 <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                    <use xlink:href="/images/sprites/sprite.svg#vodafone"></use>
                                 </svg>
                                 <span>099 947 5645</span>
                             </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#kyivstar"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#lifecell"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="mailto:lorem@gmail.com"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#email"></use>
+                                </svg>
+                                <span>lorem@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <div class="contacts-card__item">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#clock"></use>
+                                </svg>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Понеділок - Четверг:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">П'ятниця:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Субота /Неділя:</div>
+                                    вихідні
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-tabs tabs">
+                <ul class="contacts-list tab-list">
+                    <li class="contacts-tab active"><a class="contacts-tab__link" href="#tab-contacts-1">київський офіс</a></li>
+                    <li class="contacts-tab"><a class="contacts-tab__link" href="#tab-contacts-2">харківський офіс</a></li>
+                </ul>
+                <div id="tab-contacts-1" class="contacts-card" style="display: block">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
+                    </div>
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title">київський офіс</div>
+                        <div class="contacts-card__line">
                             <a class="contacts-card__item"
                                href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
                                target="_blank">
                                 <svg class="icon">
                                     <use xlink:href="/images/sprites/sprite.svg#address"></use>
                                 </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#vodafone"></use>
+                                </svg>
                                 <span>099 947 5645</span>
                             </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#kyivstar"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#lifecell"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="mailto:lorem@gmail.com"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#email"></use>
+                                </svg>
+                                <span>lorem@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <div class="contacts-card__item">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#clock"></use>
+                                </svg>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Понеділок - Четверг:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">П'ятниця:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Субота /Неділя:</div>
+                                    вихідні
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-contacts-2" class="contacts-card">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
+                    </div>
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title">харківський офіс</div>
+                        <div class="contacts-card__line">
                             <a class="contacts-card__item"
                                href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
                                target="_blank">
                                 <svg class="icon">
                                     <use xlink:href="/images/sprites/sprite.svg#address"></use>
                                 </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#vodafone"></use>
+                                </svg>
                                 <span>099 947 5645</span>
                             </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#kyivstar"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="tel:099 947 5645"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#lifecell"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="mailto:lorem@gmail.com"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#email"></use>
+                                </svg>
+                                <span>lorem@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <div class="contacts-card__item">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#clock"></use>
+                                </svg>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Понеділок - Четверг:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">П'ятниця:</div>
+                                    з 8-00 до 17-00
+                                </div>
+                                <div class="contacts-card__item-col">
+                                    <div class="contacts-card__item-label">Субота /Неділя:</div>
+                                    вихідні
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
