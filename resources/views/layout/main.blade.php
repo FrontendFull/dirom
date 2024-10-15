@@ -86,6 +86,27 @@
         </div>
     </div>
 
+    <div class="company-division my-content">
+        <div class="container">
+            <div class="company-wrap">
+                <div class="company-image-3"><img src="https://picsum.photos/603/603" alt="#"></div>
+                <div class="company-image-2"><img src="https://picsum.photos/602/602" alt="#"></div>
+                <div class="company-inner">
+                    <div class="h1 company-title"><span>Про</span> компанію</div>
+                    <div class="company-text">{{ fake()->sentence(35) }}</div>
+                    <div class="company-text-alt">{{ fake()->sentence(48) }}</div>
+                    <a href="#" class="more">
+                        <span>Дізнатися більше</span>
+                        <svg class="icon">
+                            <use xlink:href="/images/sprites/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="company-image-1"><img src="https://picsum.photos/601/601" alt="#"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="manufacturers-division container my-content">
         <div class="title-wrap">
             <div class="h1 title-division">Виробники</div>
@@ -109,154 +130,181 @@
         </div>
     </div>
 
-    <div class="contacts-division container my-content">
-        <div class="contacts-inner">
-            <div class="contacts-info">
-                <h1 class="contacts-info__title title-section">Контакти</h1>
-                <div class="contacts-info__text">Залишились питання? Залиште заявку на сайті або у соцмережах і наш
-                    менеджер
-                    передзвонить вам.
-                </div>
-                <div class="contacts-info__row">
-                    <div class="contacts-info__cell">
-                        <div class="contacts-info__social-label social-label">Соціальні мережі:</div>
-                        <div class="contacts-info__social-list social-list">
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contacts-info__cell">
-                        <div class="contacts-info__social-label social-label">Месенджери:</div>
-                        <div class="contacts-info__social-list social-list">
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#viber"></use>
-                                </svg>
-                            </a>
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#telegram"></use>
-                                </svg>
-                            </a>
-                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#whatsapp"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts-info__alt-title">Оптовим постачальникам</div>
-                <div class="contacts-info__alt-text">Для комерційної співпраці зателефонуйте за номером нижче</div>
-                <a class="contacts-info__alt-phone" href="tel:(093) 223 27 66">
-                    <svg class="icon">
-                        <use xlink:href="/images/sprites/sprite.svg#phone"></use>
-                    </svg>
-                    <span>(093) 223 27 66</span>
-                </a>
-                <div class="contacts-info__button button">Зворотній зв’язок</div>
+    <div class="clients-division my-content">
+        <div class="container">
+            <div class="clients-main">
+                <h1 class="clients-title title-division">Наші<br> <span>клієнти</span></h1>
+                <div class="clients-text">{{ fake()->sentence(50) }}</div>
             </div>
-            <div class="contacts-mesh">
-                <div class="contacts-card">
-                    <div class="contacts-card__map">
-                        <img src="https://picsum.photos/450/300" alt="#">
+            <div class="clients-inner tabs">
+                <ul class="clients-list tab-list">
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-1">архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-2">маляри і архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-3">дизайнери</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-4">бідівельні компанії</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-11">архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-22">маляри і архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-33">дизайнери</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-44">бідівельні компанії</a></li>
+                </ul>
+                <div id="tab-1" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
                     </div>
-                    <div class="contacts-card__info">
-                        <div class="contacts-card__title"></div>
-                        <div class="contacts-card__line">
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
-                            </a>
-                        </div>
-                        <div class="contacts-card__line">
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                        </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
                     </div>
                 </div>
-                <div class="contacts-card">
-                    <div class="contacts-card__map">
-                        <img src="https://picsum.photos/450/300" alt="#">
+                <div id="tab-2" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
                     </div>
-                    <div class="contacts-card__info">
-                        <div class="contacts-card__title"></div>
-                        <div class="contacts-card__line">
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
-                            </a>
-                        </div>
-                        <div class="contacts-card__line">
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                            <a class="contacts-card__item"
-                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
-                               target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
-                                </svg>
-                                <span>099 947 5645</span>
-                            </a>
-                        </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                </div>
+                <div id="tab-3" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                </div>
+                <div id="tab-4" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                </div>
+                <div id="tab-11" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                </div>
+                <div id="tab-22" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                </div>
+                <div id="tab-33" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                </div>
+                <div id="tab-44" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
                     </div>
                 </div>
             </div>
@@ -442,181 +490,154 @@
         </div>
     </div>
 
-    <div class="clients-division my-content">
-        <div class="container">
-            <div class="clients-main">
-                <h1 class="clients-title title-division">Наші<br> <span>клієнти</span></h1>
-                <div class="clients-text">{{ fake()->sentence(50) }}</div>
+    <div class="contacts-division container my-content">
+        <div class="contacts-inner">
+            <div class="contacts-info">
+                <h1 class="contacts-info__title title-section">Контакти</h1>
+                <div class="contacts-info__text">Залишились питання? Залиште заявку на сайті або у соцмережах і наш
+                    менеджер
+                    передзвонить вам.
+                </div>
+                <div class="contacts-info__row">
+                    <div class="contacts-info__cell">
+                        <div class="contacts-info__social-label social-label">Соціальні мережі:</div>
+                        <div class="contacts-info__social-list social-list">
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-info__cell">
+                        <div class="contacts-info__social-label social-label">Месенджери:</div>
+                        <div class="contacts-info__social-list social-list">
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-info__social-item social-item" href="#" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-info__alt-title">Оптовим постачальникам</div>
+                <div class="contacts-info__alt-text">Для комерційної співпраці зателефонуйте за номером нижче</div>
+                <a class="contacts-info__alt-phone" href="tel:(093) 223 27 66">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#phone"></use>
+                    </svg>
+                    <span>(093) 223 27 66</span>
+                </a>
+                <div class="contacts-info__button button">Зворотній зв’язок</div>
             </div>
-            <div class="clients-inner tabs">
-                <ul class="clients-list tab-list">
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-1">архітектори</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-2">маляри і архітектори</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-3">дизайнери</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-4">бідівельні компанії</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-11">архітектори</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-22">маляри і архітектори</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-33">дизайнери</a></li>
-                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-44">бідівельні компанії</a></li>
-                </ul>
-                <div id="tab-1" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
+            <div class="contacts-mesh">
+                <div class="contacts-card">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
                     </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/400/400" alt="#">
-                    </div>
-                </div>
-                <div id="tab-2" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/410/410" alt="#">
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div id="tab-3" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
+                <div class="contacts-card">
+                    <div class="contacts-card__map">
+                        <img src="https://picsum.photos/450/300" alt="#">
                     </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/420/420" alt="#">
-                    </div>
-                </div>
-                <div id="tab-4" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/405/405" alt="#">
-                    </div>
-                </div>
-                <div id="tab-11" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/415/415" alt="#">
-                    </div>
-                </div>
-                <div id="tab-22" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/425/425" alt="#">
-                    </div>
-                </div>
-                <div id="tab-33" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/430/430" alt="#">
-                    </div>
-                </div>
-                <div id="tab-44" class="clients-mesh">
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
-                    </div>
-                    <div class="clients-image">
-                        <img src="https://picsum.photos/435/435" alt="#">
+                    <div class="contacts-card__info">
+                        <div class="contacts-card__title"></div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>м. Київ, вул. Шевченка, буд. 44, офіс 67</span>
+                            </a>
+                        </div>
+                        <div class="contacts-card__line">
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                            <a class="contacts-card__item"
+                               href="https://www.google.com/maps/search/м. Київ, вул. Шевченка, буд. 44, офіс 67"
+                               target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="/images/sprites/sprite.svg#address"></use>
+                                </svg>
+                                <span>099 947 5645</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

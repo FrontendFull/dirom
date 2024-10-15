@@ -1,0 +1,132 @@
+.company-wrap {
+    position: relative;
+    border: 1px solid $background-color;
+    padding: 40px;
+    min-height: 475px;
+    @include breakpoint(md-down){
+        margin-bottom: 150px;
+    }
+}
+
+.company-inner {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 546px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    @include breakpoint(md-down){
+        width: initial;
+    }
+}
+
+.company-title {
+}
+
+.company-text {
+    font-size: customClamp(18, 16);
+    margin-bottom: 12px;
+}
+
+.company-text-alt {
+    color: $text-color-alt;
+    margin-bottom: customClamp(20, 15);
+}
+
+
+.company-image-1 {
+    @include breakpoint(md-up) {
+        @include imageSize(339, 322);
+        position: absolute;
+        max-width: 339px;
+        width: percent(339);
+        top: -7%;
+        left: -10%;
+        @media (max-width: 1850px) {
+            left: -8%;
+        }
+        @media (max-width: 1750px) {
+            left: -6%;
+        }
+        @media (max-width: 1650px) {
+            left: -4%;
+        }
+        @media (max-width: 1550px) {
+            left: -2%;
+        }
+        @media (max-width: 1450px) {
+            left: 0;
+        }
+    }
+    @include breakpoint(md-down){
+        @include imageSize(277, 200);
+        margin: 30px auto -150px;
+        max-width: 400px;
+    }
+}
+
+.company-image-2 {
+    @include imageSize(462, 544);
+    position: absolute;
+    max-width: 462px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10%;
+    width: percent(462);
+    @media (max-width: 1850px) {
+        right: -8%;
+    }
+    @media (max-width: 1750px) {
+        right: -6%;
+    }
+    @media (max-width: 1650px) {
+        right: -4%;
+    }
+    @media (max-width: 1550px) {
+        right: -2%;
+    }
+    @media (max-width: 1450px) {
+        right: 0;
+    }
+    @include breakpoint(md-down) {
+        display: none;
+    }
+}
+
+.company-image-3 {
+    @include breakpoint(md-up) {
+        @include imageSize(499, 177);
+        max-width: 499px;
+        width: percent(499);
+        position: absolute;
+        bottom: -7%;
+        left: -15%;
+        @media (max-width: 1850px) {
+            left: -11%;
+        }
+        @media (max-width: 1750px) {
+            left: -9%;
+        }
+        @media (max-width: 1650px) {
+            left: -4%;
+        }
+        @media (max-width: 1550px) {
+            left: -2%;
+        }
+        @media (max-width: 1450px) {
+            left: 0;
+        }
+    }
+    @include breakpoint(md-down) {
+        @include imageSize(270, 98);
+        margin: -70px auto 30px;
+        max-width: 400px;
+    }
+}
+
