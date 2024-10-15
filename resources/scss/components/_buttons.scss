@@ -19,6 +19,17 @@
     }
 }
 
+.icon-link{
+    svg, img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    @extend %buttons;
+    @include hover{
+        color: $color1;
+    }
+}
+
 
 .button {
     @extend %buttons;
@@ -164,5 +175,26 @@
         fill: currentColor;
         width: 50%;
         height: 50%;
+    }
+}
+
+
+.button-icon{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    @include hover{
+        color: $color1;
+    }
+
+
+    .icon{
+        fill: transparent;
+        stroke: currentColor;
+        width: percent(24,54);
+        height: percent(24,54);
     }
 }

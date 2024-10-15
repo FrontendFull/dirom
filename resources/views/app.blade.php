@@ -13,7 +13,44 @@
 </head>
 <body class="@yield('class')">
 <header class="header">
-
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="catalog-trigger icon-link">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#catalog"></use>
+                    </svg>
+                    <span>Каталог  товарів</span>
+                </div>
+            </div>
+            <a class="logo" href="/">
+                <img src="/images/logo.svg" alt="Logo">
+            </a>
+            <div class="header-right">
+                <div class="button-icon">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#search"></use>
+                    </svg>
+                </div>
+                <div class="button-icon">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#user"></use>
+                    </svg>
+                </div>
+                <div class="button-icon">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#cart"></use>
+                    </svg>
+                </div>
+                <div class="menu-trigger icon-link">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprites/sprite.svg#menu"></use>
+                    </svg>
+                    <span>Меню</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <main class="main">

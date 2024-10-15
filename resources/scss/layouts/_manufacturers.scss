@@ -23,9 +23,7 @@
     height: 100%;
     background-color: $background-color;
     &__image {
-        background-color: rgba($text-color, .05);
         @include imageSize(353,190, 0, contain);
-        border-radius: 10px;
         img{
             width: 85%;
             height: 85%;

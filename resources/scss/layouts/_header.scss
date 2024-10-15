@@ -1,0 +1,32 @@
+.header{
+    min-height: 105px;
+    background-color: $background-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 110;
+
+    .logo{
+        @include imageSize(145,64);
+        max-width: 145px;
+    }
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left,.header-right{
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(50% - 75px);
+}
+
+.header-right{
+    justify-content: flex-end;
+}

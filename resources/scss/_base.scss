@@ -14,8 +14,15 @@ body {
     width: 100vw;
     max-width: 100%;
     background-color: $background-color;
-    background-color: darkgray;
-    overflow-x: hidden !important;
+    background-image: url("/public/images/bg.webp");
+
+    &:after{
+        content: '';
+        @include centering-size();
+        position: fixed;
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
 
     &.fancybox-iosfix {
         position: relative !important;
@@ -25,6 +32,7 @@ body {
     }
 
     main {
+        margin-top: 105px;
         flex: 1 1 auto;
     }
 
