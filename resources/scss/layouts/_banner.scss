@@ -1,0 +1,25 @@
+.banner-division{
+    position: relative;
+}
+.banner-card{
+    @include imageSize(1920,940);
+    @include breakpoint(mxs){
+        @include imageSize(393,287);
+    }
+}
+.banner-inner{
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.banner-slider-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: customClamp(60,20);
+}
+.banner-button{
+    margin: 0 auto;
+}

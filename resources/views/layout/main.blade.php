@@ -2,6 +2,24 @@
 @section('class', 'main-page-page')
 
 @section('content')
+    <div class="banner-division">
+        <div class="banner-slider" data-time="3">
+            @for ($i = 1; $i <= 4; $i++)
+                <div class="banner-card">
+                    <img src="https://picsum.photos/1920/94{{$i}}/" alt="#">
+                </div>
+            @endfor
+        </div>
+        <div class="container banner-inner">
+            <div class="banner-slider-nav"></div>
+            <div class="banner-button button">
+                <span>Стати партнером</span>
+                <svg class="icon">
+                    <use xlink:href="/images/sprites/sprite.svg#arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
     <div class="catalog-division container my-content">
         <div class="title-wrap">
             <div class="h1 title-section">Каталог</div>

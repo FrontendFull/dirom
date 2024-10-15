@@ -3,7 +3,32 @@ import './bootstrap';
 import 'slick-slider'
 
 
+
 $(document).ready(function () {
+    const banner_time = +$(`.banner-slider`).attr('data-time') * 1000;
+    console.log(banner_time);
+    $('.banner-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        dots: false,
+        prevArrow: '<div class="slick-left"><svg class="icon"><use xlink:href="/images/sprites/sprite.svg#left"></use></svg></div>',
+        nextArrow: '<div class="slick-right"><svg class="icon"><use xlink:href="/images/sprites/sprite.svg#right"></use></svg></div>',
+        appendArrows: $('.banner-slider-nav'),
+        autoplay: !!banner_time,
+        autoplaySpeed: banner_time,
+        responsive: [
+
+            {
+                breakpoint: 769,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                }
+            }
+        ]
+    });
     $('.manufacturers-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
