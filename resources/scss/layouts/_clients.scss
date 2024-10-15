@@ -1,0 +1,113 @@
+.clients-main{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: customClamp(36,16);
+    gap: 20px;
+    border-bottom: 1px solid rgba($text-color, .1);
+    margin-bottom: 16px;
+    @include breakpoint(xs){
+        flex-wrap: wrap;
+    }
+}
+
+.clients-title{
+    margin-bottom: 0;
+}
+.clients-text{
+    margin-left: auto;
+    max-width: 940px;
+    font-size: customClamp(18,16);
+    padding-left: customClamp(30,15);
+    border-left: 1px solid $color1;
+    color: $text-color-alt;
+    width: 70%;
+    @include breakpoint(xs){
+        width: 100%;
+    }
+}
+
+.clients-inner {
+    display: flex;
+    align-items: flex-start;
+    @include breakpoint(xs){
+        flex-direction: column;
+    }
+}
+
+
+.clients-list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    @include breakpoint(xs-up) {
+        flex-direction: column;
+        gap: 12px;
+    }
+    @include breakpoint(xs){
+        margin-bottom: 10px;
+    }
+}
+
+
+.clients-tab {
+    margin: 0;
+    &.active{
+        pointer-events: none;
+        @include breakpoint(xs-up){
+            color: $color1;
+        }
+        @include breakpoint(xs){
+            background-color: $color1;
+        }
+    }
+    @include breakpoint(xs){
+        padding: 5px;
+        background-color: $background-color;
+    }
+    &__link{
+        text-transform: uppercase;
+        font-size: customClamp(24,18);
+    }
+}
+
+.clients-mesh{
+    margin-left: auto;
+    max-width: 940px;
+    width: 70%;
+    @include breakpoint(xs){
+        width: 100%;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px 2px;
+    grid-template-areas:
+    "img-1 img-1 img-4 img-5"
+    "img-1 img-1 img-6 img-6"
+    "img-2 img-3 img-6 img-6";
+
+    .clients-image{
+        @include imageSize();
+        &:nth-child(1){
+            grid-area: img-1;
+        }
+        &:nth-child(2){
+            grid-area: img-2;
+        }
+        &:nth-child(3){
+            grid-area: img-3;
+        }
+        &:nth-child(4){
+            grid-area: img-4;
+        }
+        &:nth-child(5){
+            grid-area: img-5;
+        }
+        &:nth-child(6){
+            grid-area: img-6;
+        }
+    }
+}

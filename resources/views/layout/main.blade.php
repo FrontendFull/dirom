@@ -424,6 +424,187 @@
         </div>
     </div>
 
+    <div class="clients-division my-content">
+        <div class="container">
+            <div class="clients-main">
+                <h1 class="clients-title title-division">Наші<br> <span>клієнти</span></h1>
+                <div class="clients-text">{{ fake()->sentence(50) }}</div>
+            </div>
+            <div class="clients-inner tabs">
+                <ul class="clients-list tab-list">
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-1">архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-2">маляри і архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-3">дизайнери</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-4">бідівельні компанії</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-11">архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-22">маляри і архітектори</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-33">дизайнери</a></li>
+                    <li class="clients-tab"><a class="clients-tab__link" href="#tab-44">бідівельні компанії</a></li>
+                </ul>
+                <div id="tab-1" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/400/400" alt="#">
+                    </div>
+                </div>
+                <div id="tab-2" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/410/410" alt="#">
+                    </div>
+                </div>
+                <div id="tab-3" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/420/420" alt="#">
+                    </div>
+                </div>
+                <div id="tab-4" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/405/405" alt="#">
+                    </div>
+                </div>
+                <div id="tab-11" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/415/415" alt="#">
+                    </div>
+                </div>
+                <div id="tab-22" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/425/425" alt="#">
+                    </div>
+                </div>
+                <div id="tab-33" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/430/430" alt="#">
+                    </div>
+                </div>
+                <div id="tab-44" class="clients-mesh">
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                    <div class="clients-image">
+                        <img src="https://picsum.photos/435/435" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="seo-division container my-content">
         <div class="seo-text ckeditor">
             <h1>Більше про <span>компанію</span></h1>
