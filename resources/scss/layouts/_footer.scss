@@ -1,110 +1,76 @@
 .footer {
-  background-color: $color7;
+    background-color: $background-color;
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding-top: customClamp(50, 20);
-  padding-bottom: customClamp(60, 20);
-  @include breakpoint(smxs){
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: customClamp(50, 20);
+    padding-bottom: customClamp(60, 20);
+    @include breakpoint(smxs) {
+        flex-direction: column;
+    }
+}
+
+.footer-column {
+    display: flex;
     flex-direction: column;
-  }
+    gap: 16px;
+}
+
+.footer-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $text-color-alt;
+}
+
+.footer-title-alt {
+    font-weight: 500;
+    color: $text-color-alt;
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 0;
-  font-weight: 500;
-
-  li {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 0;
-  }
+    font-weight: 500;
+
+    li {
+        list-style: none;
+        margin: 0;
+    }
 }
 
-.footer-contact {
-  &__title {
-    text-transform: uppercase;
-    font-weight: 700;
+.footer-contacts {
     display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 16px;
+}
 
-    &_alt {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-  }
-
-  &__icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: $color2;
-    fill: transparent;
-    stroke: $text-color-alt;
+.footer-registration {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .icon {
-      width: 50%;
-      height: 50%;
-    }
-  }
+    flex-direction: column;
+    gap: 8px;
 }
 
 .footer-bottom {
-  font-size: 14px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: customClamp(20, 10);
-  padding-bottom: customClamp(20, 10);
-  @include breakpoint(xs){
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: customClamp(20, 10);
+    padding-bottom: customClamp(20, 10);
+    border-top: 1px solid rgba($text-color, .1);
+    @include breakpoint(xs) {
     flex-direction: column;
-  }
+}
 
-  .webdev {
-    span {
-      font-weight: 600;
-      color: $color2;
+    a {
+        font-size: 14px;
     }
-
-    b {
-      color: red;
-    }
-  }
 }
 
-.footer-phones{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-phone{
-  font-weight: 500;
-}
-
-.footer-email{
-  font-weight: 500;
-}
-
-.footer-social{
-  margin-top: 10px;
-}
-
-.footer-work{
-  line-height: 1.5;
-  b{
-    font-weight: 500;
-  }
-}
